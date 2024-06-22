@@ -1,0 +1,11 @@
+[package]
+name = "ndecdhaes"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10.3"
+base64 = "0.22.1"
+clap = { version = "4.5.7", features = ["derive"] }
+p256 = { version = "0.13.2", features = ["ecdh", "serde", "bits"] }
+rand_core = { version = "0.6.4", features = ["getrandom"] }
